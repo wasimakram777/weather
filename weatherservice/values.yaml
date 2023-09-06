@@ -1,0 +1,13 @@
+replicaCount: 1
+
+image:
+  repository: prvnv7/springboot
+  pullPolicy: IfNotPresent
+  # Override the app's default port if necessary
+  port: 8080
+
+service:
+  type: ClusterIP
+  port: 8080
+
+# Other configurations can remain default for now
