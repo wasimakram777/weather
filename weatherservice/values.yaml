@@ -7,7 +7,7 @@ image:
   port: 8080
 
 service:
-  type: ClusterIP
+  type: NodePort
   port: 8080
 
 # Other configurations can remain default for now
