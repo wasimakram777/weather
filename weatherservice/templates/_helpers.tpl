@@ -46,8 +46,7 @@ app.kubernetes.io/managed-by: {{ .Release.Service }}
 Selector labels
 */}}
 {{- define "weatherservice.selectorLabels" -}}
-app.kubernetes.io/name: {{ include "weatherservice.name" . }}
-app.kubernetes.io/instance: {{ .Release.Name }}
+app: weatherservice
 {{- end }}
 
 {{/*
