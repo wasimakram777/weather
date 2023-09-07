@@ -6,7 +6,6 @@ metadata:
     {{- include "weatherservice.labels" . | nindent 4 }}
 spec:
   replicas: {{ .Values.replicaCount }}
-  {{- end }}
   selector:
     matchLabels:
       {{- include "weatherservice.selectorLabels" . | nindent 6 }}
